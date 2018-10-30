@@ -1,4 +1,4 @@
-namespace huffman-compression
+namespace huffman_compression
 {
         class Node: IComparable
     {
