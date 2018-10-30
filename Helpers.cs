@@ -1,25 +1,21 @@
 using System;
-using COIS_2020H_Assignment_2;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Collections;
 
 namespace COIS_2020H_Assignment_2
 {
     class Node: IComparable
     {
-        public char Character
-        { get; set; }
-
-        public int Frequency
-        { get; set; }
-
-        public Node Left
-        { get; set; }
-
-        public Node Right
-        { get; set; }
+        public char Character { get; set; }
+        public int Frequency { get; set; }
+        public Node Left { get; set; }
+        public Node Right { get; set; }
 
         public Node (char character, int frequency, Node left, Node right)
         {
-
+            
         }
 
         // 5 marks
