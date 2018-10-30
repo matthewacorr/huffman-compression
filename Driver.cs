@@ -1,7 +1,10 @@
 using System;
-using huffman_compression;
+using COIS_2020H_Assignment_2;
 
-namespace huffman_compression
+namespace COIS_2020H_Assignment_2
 {
-    
+    class Driver
+    {
+
+    }
 }

@@ -1,6 +1,6 @@
-namespace huffman_compression
+namespace COIS_2020H_Assignment_2
 {
-        class Node: IComparable
+    class Node: IComparable
     {
         public char Character
         { get; set; }
