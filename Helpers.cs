@@ -1,3 +1,6 @@
+using System;
+using COIS_2020H_Assignment_2;
+
 namespace COIS_2020H_Assignment_2
 {
     class Node: IComparable
@@ -15,11 +18,15 @@ namespace COIS_2020H_Assignment_2
         { get; set; }
 
         public Node (char character, int frequency, Node left, Node right)
-        { ... }
+        {
+
+        }
 
         // 5 marks
         public int CompareTo ( Object obj )
-        { ... }
+        {
+
+        }
     }
 
     class Huffman
@@ -29,12 +36,16 @@ namespace COIS_2020H_Assignment_2
 
         // Constructor
         public Huffman (string S)
-        { ... }
+        {
+
+        }
         
         // 15 marks
         // Return the frequency of each character in the given text (invoked by Huffman)
         private int[] AnalyzeText ( string  S )
-            { ... }
+        {
+            
+        }
         
         // 20 marks
         // Build a Huffman tree based on the character frequencies greater than 0 (invoked by Huffman)
@@ -46,17 +57,23 @@ namespace COIS_2020H_Assignment_2
         // 20 marks
         // Create the code of 0s and 1s for each character by traversing the Huffman tree (invoked by Huffman)
         private void CreateCodes ( )
-        { ... }
+        {
+
+        }
         
         // 10 marks
         // Encode the given text and return a string of 0s and 1s
         public string Encode ( string S)
-        { ... }
+        {
+
+        }
         
         // 10 marks
         // Decode the given string of 0s and 1s and return the original text
         public string Decode ( string S)
-        { ... }
+        {
+            
+        }
     }
 
 }
