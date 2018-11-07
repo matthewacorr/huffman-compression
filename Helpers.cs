@@ -8,7 +8,12 @@ namespace COIS_2020H_Assignment_2
 {
     class Node: IComparable
     {
-        public char Character { get; set; }
+        public char// 10 marks
+        // Decode the given string of 0s and 1s and return the original text
+        public string Decode ( string S)
+        {
+
+        } Character { get; set; }
         public int Frequency { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
@@ -40,7 +45,11 @@ namespace COIS_2020H_Assignment_2
         // Return the frequency of each character in the given text (invoked by Huffman)
         private int[] AnalyzeText ( string  S )
         {
-
+          int[] frequency = new int[43];
+          foreach(char C in S)
+          {
+            if(C )
+          }
         }
 
         // 20 marks
@@ -59,34 +68,36 @@ namespace COIS_2020H_Assignment_2
 
         // 10 marks
         // Encode the given text and return a string of 0s and 1s
-        public string Encode ( string S)
+        public string Encode(string S)
         {
+        //invoke huffman() [?], insert letters into dictionary w/ codes then read dictionary and output the code of each letter once the initial string is looked at again
+            string result = "";
+            char lookup;
+            for(int i = 0; i< S.Length; i++){
+                lookup = S[i];
 
+                if(D.ContainsKey(lookup)==true)
+                {
+                    result = result + (D[lookup] +' ');
+                }
+            }
+            return result;
         }
 
         // Decode the given string of 0s and 1s and return the original text
         public string Decode(string S)
         {
-            string result;
-
-            //current is just a way to traverse down the huffman tree
-            Node<PQ> current = Root;
+            string result = "";
+            Node current = Root;
             for (int i = 0; i < S.Length; i++)
             {
                 if (S[i] == '0')
-                {
                     current = current.Left;
-                }
                 else
-                {
                     current = current.Right;
-                }
 
                 if (current.Left == null && current.Right == null)
-                {
-                    result = result + current.character;
-
-                }
+                    result = result + current.Character;
 
                 if (S[i + 1] == ' ')
                     i = i + 1;
