@@ -8,7 +8,6 @@ namespace COIS_2020H_Assignment_2
 {
     class Driver
     {
-        string input = Console.ReadLine();
-        
+
     }
 }
