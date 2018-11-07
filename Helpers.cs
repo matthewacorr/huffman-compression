@@ -58,12 +58,12 @@ namespace COIS_2020H_Assignment_2
                     {
                         frequency[i]++; // Increase the frequency at that index by 1.
                     }
-                    if(letters[i] != C) // If he character does not match at the index.
+                    elseif(letters[i] != C) // If he character does not match at the index.
                     {
 
                         i++; // Increase the index by one to check the next space.
                     }
-                    if(letters[i] == null) // If the location in letters is empty.
+                    elseif(letters[i] == null) // If the location in letters is empty.
                     {
                         letters[i] = C; // Insert at empty location
                         i++; // Move to next location for the loop.
