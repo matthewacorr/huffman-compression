@@ -8,12 +8,7 @@ namespace COIS_2020H_Assignment_2
 {
     class Node: IComparable
     {
-        public char// 10 marks
-        // Decode the given string of 0s and 1s and return the original text
-        public string Decode ( string S)
-        {
-
-        } Character { get; set; }
+        public char Character { get; set; }
         public int Frequency { get; set; }
         public Node Root{get; set;}
         public Node Left { get; set; }
