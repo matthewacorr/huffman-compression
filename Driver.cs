@@ -12,7 +12,7 @@ namespace COIS_2020H_Assignment_2
       public static void Main()
         {
             string input;
-            Console.WriteLine("Please input a sentence to be parsed:");
+            Console.WriteLine("Please input a sentence to be parsed");
             input = Console.ReadLine();
             Huffman x = new Huffman(input);
 
@@ -21,7 +21,6 @@ namespace COIS_2020H_Assignment_2
 
             Console.WriteLine("Code that will be decoded: {0}", input);
             x.Decode(input);
-          
         }
     }
 }
