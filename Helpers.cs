@@ -25,9 +25,16 @@ namespace COIS_2020H_Assignment_2
         }
 
         // 5 marks
-        public int CompareTo ( Object obj )
+        public int CompareTo(Object obj)
         {
-
+            Node x = (Node)obj;
+            if (x.Frequency < this.Frequency)
+                return -1;
+            else
+                if (x.Frequency == this.Frequency)
+                    return 0;
+                else
+                    return 1;
         }
     }
 
@@ -58,12 +65,12 @@ namespace COIS_2020H_Assignment_2
                     {
                         frequency[i]++; // Increase the frequency at that index by 1.
                     }
-                    elseif(letters[i] != C) // If he character does not match at the index.
+                    else if(letters[i] != C) // If he character does not match at the index.
                     {
 
                         i++; // Increase the index by one to check the next space.
                     }
-                    elseif(letters[i] == null) // If the location in letters is empty.
+                    else if(letters[i] == null) // If the location in letters is empty.
                     {
                         letters[i] = C; // Insert at empty location
                         i++; // Move to next location for the loop.
@@ -71,7 +78,6 @@ namespace COIS_2020H_Assignment_2
                 }
             }
         }
-
         // 20 marks
         // Build a Huffman tree based on the character frequencies greater than 0 (invoked by Huffman)
         private void Build (int[] F)
