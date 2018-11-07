@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Collections;
+using COIS_2020H_Assignment_2;
 
 namespace COIS_2020H_Assignment_2
 {
@@ -16,7 +17,10 @@ namespace COIS_2020H_Assignment_2
 
         public Node (char character, int frequency, Node left, Node right)
         {
-
+          Character = character;
+          Frequency = frequency;
+          Node Left = Node left;
+          Node Right = Node right;
         }
 
         // 5 marks
@@ -65,7 +69,7 @@ namespace COIS_2020H_Assignment_2
 
                         i++; // Increase the index by one to check the next space.
                     }
-                    else if(letters[i] == null) // If the location in letters is empty.
+                    else if(letters[i] == '') // If the location in letters is empty.
                     {
                         letters[i] = C; // Insert at empty location
                         i++; // Move to next location for the loop.
