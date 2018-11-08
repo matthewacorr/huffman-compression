@@ -19,11 +19,10 @@ namespace COIS_2020H_Assignment_2
         {
           Character = character;
           Frequency = frequency;
-          Node Left = Node left;
-          Node Right = Node right;
+          Left = left;
+          Right = right;
         }
 
-        // 5 marks
         public int CompareTo(Object obj)
         {
             Node x = (Node)obj;
@@ -66,7 +65,6 @@ namespace COIS_2020H_Assignment_2
                     }
                     else if(letters[i] != C) // If he character does not match at the index.
                     {
-
                         i++; // Increase the index by one to check the next space.
                     }
                     else if(letters[i] == '') // If the location in letters is empty.
@@ -77,11 +75,13 @@ namespace COIS_2020H_Assignment_2
                 }
             }
         }
+
         // 20 marks
         // Build a Huffman tree based on the character frequencies greater than 0 (invoked by Huffman)
         private void Build (int[] F)
         {
             PriorityQueue<Node>  PQ;
+
         }
 
         // 20 marks
@@ -95,17 +95,16 @@ namespace COIS_2020H_Assignment_2
         // Encode the given text and return a string of 0s and 1s
         public string Encode(string S)
         {
-
-        //invoke huffman() [?], insert letters into dictionary w/ codes then read dictionary and output the code of each letter once the initial string is looked at again
+            //invoke huffman() [?], insert letters into dictionary w/ codes then read dictionary and output the code of each letter once the initial string is looked at again
             string result = "";
             char lookup;
-            for(int i = 0; i< S.Length; i++){
-                lookup = S[i];
-
-                if(D.ContainsKey(lookup)==true)
-                {
-                    result = result + (D[lookup] +' ');
-                }
+            for(int i = 0; i< S.Length; i++)
+            {
+              lookup = S[i];
+              if(D.ContainsKey(lookup)==true)
+              {
+                result = result + (D[lookup] +' ');
+              }
             }
             return result;
         }
@@ -127,10 +126,13 @@ namespace COIS_2020H_Assignment_2
 
                 if (S[i + 1] == ' ')
                     i = i + 1;
-                //adds up with the additional increase from the initial for loop to skip the space fully
+
+                /**
+                adds up with the additional increase from the
+                initial for loop to skip the space fully
+                **/
             }
             return result;
         }
     }
-
 }

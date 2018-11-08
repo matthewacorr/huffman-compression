@@ -1,7 +1,8 @@
 # huffman-compression
 A C# program used to create and display huffman trees at runtime.
 
-The user puts in a string and the frequencies of each letter is counted and then the huffman tree is built usingthe frequencies.
+The user puts in a string and then codes are built from a huffman tree data structure.
 
 Todo:
-- Everything.
+- Fix `Build` and `CreateCodes` methods
+- Re-write driver display encoded and decoded messages
