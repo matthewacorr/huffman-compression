@@ -1,0 +1,11 @@
+/home/matt/Code/csharp/huffman-compression/bin/Debug/netcoreapp2.1/huffman-compression.deps.json
+/home/matt/Code/csharp/huffman-compression/bin/Debug/netcoreapp2.1/huffman-compression.runtimeconfig.json
+/home/matt/Code/csharp/huffman-compression/bin/Debug/netcoreapp2.1/huffman-compression.runtimeconfig.dev.json
+/home/matt/Code/csharp/huffman-compression/bin/Debug/netcoreapp2.1/huffman-compression.dll
+/home/matt/Code/csharp/huffman-compression/bin/Debug/netcoreapp2.1/huffman-compression.pdb
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.csprojAssemblyReference.cache
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.csproj.CoreCompileInputs.cache
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.AssemblyInfoInputs.cache
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.AssemblyInfo.cs
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.dll
+/home/matt/Code/csharp/huffman-compression/obj/Debug/netcoreapp2.1/huffman-compression.pdb
