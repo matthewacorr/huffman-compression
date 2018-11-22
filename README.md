@@ -1,8 +1,12 @@
 # huffman-compression
+---------------------
 A C# program used to create and display huffman trees at runtime.
 
-The user puts in a string and then codes are built from a huffman tree data structure.
+Usage:
+- Enter a string of valid characters (a-z,A-Z, ) and the program will use a huffman compression algorithm to return an encoded string
 
 Todo:
-- Fix `Build` and `CreateCodes` methods
-- Re-write driver display encoded and decoded messages
+- Allow the program to accept any ACSII character.
+
+Known Bugs:
+- None that I'm aware of
